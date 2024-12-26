@@ -17,8 +17,8 @@ This repository contains an end-to-end test automation framework built using Cyp
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/Benyon/cypress-technical-afi
+cd cypress-technical-afi
 ```
 
 2. Install dependencies:
