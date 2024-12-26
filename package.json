@@ -1,0 +1,33 @@
+{
+  "name": "cypress-afi",
+  "version": "1.0.0",
+  "description": "Demonstration automation testing framework for AFI",
+  "scripts": {
+    "lint:all": "eslint **/*.ts",
+    "lint:fix": "eslint **/*.ts --fix",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:open:mobile": "cypress open --config viewportWidth=375,viewportHeight=667",
+    "cy:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+    "cy:run:chrome:mobile": "cypress run --browser chrome --config viewportWidth=375,viewportHeight=667",
+    "cy:run:firefox:mobile": "cypress run --browser firefox --config viewportWidth=375,viewportHeight=667"
+  },
+  "author": "Jordan Benyon",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.17.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.12.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2"
+  }
+}

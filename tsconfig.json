@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES5",
+    "lib": ["ESNext", "DOM"],
+    "module": "esnext",
+    "strict": false,
+    "forceConsistentCasingInFileNames": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node", "cypress"],
+    "allowJs": false,
+    "paths": {
+      "@support/*": ["src/support/*"],
+      "@pages/*": ["src/pageObjects/*"],
+    }
+  },
+  "files": ["cypress.d.ts"],
+  "include": [
+    "**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.js",
+  ]
+}
