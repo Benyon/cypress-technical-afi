@@ -93,5 +93,5 @@ Due to the simplicity of the test scenario, there are some limitations to what s
 - Investigate why sessions are being pulled into the tests from previous test runs, and remove `quotesPage.clickContinueIfShown();`
 - Investigate how to pre-disable cookie popups to reduce possible flakiness.
 - Depending what the business requirements are, possibly look into sharding these tests across our most popular devices and viewports, using a tool like [BrowserStack](https://www.browserstack.com/) or (preferably) [LambdaTest](https://www.lambdatest.com/)
-- Depending on the complexity of all possible configuration options, such as environments, test suites and devices, look at implementing an environment variable dependant configuration system, where the logic for what tests run and how would be inside the cypress.config.ts instead of the package.json scripts.
-- An additional library should be created to abstract all test data creation functions.
+- Consider implementing an environment variable configuration system based on the complexity of configuration options (environments, test suites, devices). This would move test execution logic from `package.json` scripts into `cypress.config.ts` for better maintainability.
+- Consider implementing an additional test data generation library, that could generate test data dynamically when required. 
