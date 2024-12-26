@@ -1,7 +1,6 @@
 import { quotesPage } from 'cypress/pages/quotes.page'
 
 describe('Quotes', () => {
-
   beforeEach(() => {
     quotesPage
       .visit()
