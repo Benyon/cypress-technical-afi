@@ -92,6 +92,6 @@ Due to the simplicity of the test scenario, there are some limitations to what s
 - Implement a tool such as [husky](https://www.npmjs.com/package/husky) to validate commits before pushing, to enforce coding standards.
 - Investigate why sessions are being pulled into the tests from previous test runs, and remove `quotesPage.clickContinueIfShown();`
 - Investigate how to pre-disable cookie popups to reduce possible flakiness.
-- Depending what the business requirements are, possibly look into sharding these tests across our most popular devices and viewports.
+- Depending what the business requirements are, possibly look into sharding these tests across our most popular devices and viewports, using a tool like [BrowserStack](https://www.browserstack.com/) or (preferably) [LambdaTest](https://www.lambdatest.com/)
 - Depending on the complexity of all possible configuration options, such as environments, test suites and devices, look at implementing an environment variable dependant configuration system, where the logic for what tests run and how would be inside the cypress.config.ts instead of the package.json scripts.
 - An additional library should be created to abstract all test data creation functions.
